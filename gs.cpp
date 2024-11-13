@@ -1,3 +1,4 @@
+#include <gtest/gtest.h>
 #include <iostream>
 #include <vector>
 #include <cstdlib>
@@ -5,6 +6,7 @@
 #include <fstream>
 #include <sstream>
 #include <cmath>
+
 
 // Define simulation parameters
 const int width = 256;                // Width of the grid
@@ -107,6 +109,11 @@ double countElementsAboveThreshold(double threshold) {
     }
     return (double)(count)/(width*height);
 }
+
+// unit test1
+// TEST(AddTest, HandlesPositiveInput) {
+//     EXPECT_EQ(Add(1, 2), 3);  // 检查 1 + 2 是否等于 3
+// }
 
 int main(int argc, char* argv[]) {
     if (argc != 5){
